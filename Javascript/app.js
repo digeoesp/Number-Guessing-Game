@@ -2,7 +2,7 @@ let easyButton = document.getElementById('easyButton')
 let hardButton = document.getElementById('hardButton')
 let input = document.getElementById('inBox')
 let number = [Math.floor(Math.random() * 100)]
-let inputAnswer = document.getElementById('inputAnswer')
+let inputAnswer = document.getElementById('inputAnswers')
 let submit = document.getElementById('submit')
 
 
@@ -15,14 +15,19 @@ hardButton.addEventListener('click', ()=> {
     console.log('hard button');
 })
 console.log(hardButton)
-//input MDN 
-input.addEventListener('input', ()=>{
-    let answer = (inputAnswer.innerHTML);
-    input = input.value;
+//input MDN
+//once submitt button is clicked i want it to display in inputAnswer 
+submit.addEventListener('click', ()=>{
     answer = input.value;
-    inputAnswer.innerHTML = answer;
-    })
+    inputAnswers.innerHTML = answer;
+    
 
-
-let answer = (inputAnswer.innerHTML )
+    
+})
+    
+let answer = (inputAnswers.innerHTML )
 console.log(answer)
+    
+    
+
+
