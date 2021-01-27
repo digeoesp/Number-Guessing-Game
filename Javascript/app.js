@@ -1,40 +1,62 @@
 let easyButton = document.getElementById('easyButton')
 let hardButton = document.getElementById('hardButton')
 let input = document.getElementById('inBox')
-let number = [Math.floor(Math.random() * 100)]
 let inputAnswer = document.getElementById('inputAnswers')
 let submit = document.getElementById('submit')
 let answers = []
 let numberOfAttempts = document.getElementById('numberOfAttempts')
 let attempts = []
 let count = 0
+let number = [Math.floor(Math.random() * 100)]
+let numOfAttemps = 3
 
 
-
-easyButton.addEventListener('click', ()=> {
-    console.log('easy button');
-})
-console.log(easyButton)
-
-hardButton.addEventListener('click', ()=> {
-    console.log('hard button');
-})
-console.log(hardButton)
-//input MDN
-//once submitt button is clicked i want it to display in inputAnswer 
 
 submit.addEventListener('click', ()=>{
-    numberOfAttempts.value = count;
+    let userInput = input.value;
+    if(userInput == number){
+        count++;
+        numberOfAttempts.innerHTML = `you guessed right, your number was ${number}`
+    }else if (userInput < number){
+        count++;
+        numberOfAttempts.innerHTML = "you guessed to low"
+    }else if (userInput > number){
+        count++;
+        numberOfAttempts.innerHTML = "you guessed to high"
+    } 
+    if (userInput != number && count >= numOfAttemps){
+        numberOfAttempts.innerHTML = "you guessed too many times"
+    }
+    
+})
+
+submit.addEventListener('click', ()=>{
     answers.push(input.value);
-    count++;
-    console.log(count)
-    numberOfAttempts.append(count)
     inputAnswers.innerHTML = (`${answers},`);
     input.value = '';
 })
     
+    
 
 
+
+
+easyButton.addEventListener('click', ()=> {
+    numOfAttemps = 10;
+    console.log('easy button');
+})
+
+
+hardButton.addEventListener('click', ()=> {
+        numOfAttemps = 5;
+       console.log('hard button');
+    })
+    
+
+
+
+
+    
 
 
 
