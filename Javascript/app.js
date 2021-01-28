@@ -21,10 +21,10 @@ submit.addEventListener('click', ()=>{
         numberOfAttempts.innerHTML = `you guessed right, your number was ${number}`
     }else if (userInput < number){
         count++;
-        numberOfAttempts.innerHTML = "you guessed to low"
+        numberOfAttempts.innerHTML = "you guessed too low"
     }else if (userInput > number){
         count++;
-        numberOfAttempts.innerHTML = "you guessed to high"
+        numberOfAttempts.innerHTML = "you guessed too high"
     } 
     if (userInput != number && count >= numOfAttemps){
         numberOfAttempts.innerHTML = "you guessed too many times"

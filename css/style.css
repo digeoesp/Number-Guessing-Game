@@ -27,6 +27,7 @@ body {
       background-color: rgb(210, 196, 196);
       border-width: thin;
       border-radius: 3px;
+      
       opacity: 70%;
       margin: 3px;
       
@@ -40,6 +41,26 @@ body {
 #scndLine{
     max-width: 20%;
 
+}
+#resetButton{
+    width: 28%;
+    font-size: 16px;
+    color: rgb(210, 196, 196);
+    background-color: rgb(232, 62, 62);
+    border-width: thin;
+    border-radius: 3px;
+    opacity: 70%;
+    margin: 3px;
+}
+
+#submit{
+    background-color: #f2db5cf0;
+    opacity: 70%;
+    font-size: 22px;
+    border-width: thin;
+    margin: 0 0 0 3px;
+    border-radius: 3px;
+    
 }
       
       
