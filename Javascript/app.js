@@ -9,6 +9,8 @@ let attempts = []
 let count = 0
 let number = [Math.floor(Math.random() * 100)]
 let numOfAttemps = 10
+let resetButton = document.getElementById('resetButton')
+resetButton.style.display = "none"
 
 
 
@@ -29,6 +31,8 @@ submit.addEventListener('click', ()=>{
         submit.style.display ="none"
         hardButton.style.display ="none"
         easyButton.style.display ="none"
+        resetButton.style.display ="inline-block"
+        
         
     }
     
@@ -54,6 +58,14 @@ hardButton.addEventListener('click', ()=> {
     
 console.log(number)
 
+
+resetButton.addEventListener('click', ()=>{
+    window.location.reload();
+})
+
+    
+
+  
 
 
 
