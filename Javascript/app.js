@@ -8,7 +8,7 @@ let numberOfAttempts = document.getElementById('numberOfAttempts')
 let attempts = []
 let count = 0
 let number = [Math.floor(Math.random() * 100)]
-let numOfAttemps = 3
+let numOfAttemps = 10
 
 
 
@@ -26,6 +26,10 @@ submit.addEventListener('click', ()=>{
     } 
     if (userInput != number && count >= numOfAttemps){
         numberOfAttempts.innerHTML = "you guessed too many times"
+        submit.style.display ="none"
+        hardButton.style.display ="none"
+        easyButton.style.display ="none"
+        
     }
     
 })
@@ -35,23 +39,21 @@ submit.addEventListener('click', ()=>{
     inputAnswers.innerHTML = (`${answers},`);
     input.value = '';
 })
-    
-    
-
-
-
-
 easyButton.addEventListener('click', ()=> {
     numOfAttemps = 10;
+    hardButton.style.display ="none"
     console.log('easy button');
 })
 
 
 hardButton.addEventListener('click', ()=> {
         numOfAttemps = 5;
+        easyButton.style.display ="none"
        console.log('hard button');
-    })
+})
     
+console.log(number)
+
 
 
 
