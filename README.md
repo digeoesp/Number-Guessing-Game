@@ -1,7 +1,7 @@
 # Guess the Number
 "Guess the number"
 
- "Guess the number" is a single player game against the computer. The player thinks of an integer within 1 and a 100. If the guess is incorrect, the computer tells the player whether the guess was too high or too low. The player has a set number of attempts at guessing the correct number. If he doesnt guess correctly within the set number of tries he loses. If the player guesses correctly he wins and moves on to the next round.
+ "Guess the number" is a single player game against the computer. The player thinks of an integer within 1 and a 100. If the guess is incorrect, the computer tells the player whether the guess was to high or to low. The player has a set number of attempts at guessing the correct number. If he doesnt guess correctly within the set number of tries he loses. If the player guesses correctly he wins and moves on to the next round.
 
 
 
@@ -41,10 +41,10 @@ The planning materials used to build this app.
 ### Credits
 Give credit to any `codepen` that inspired you, `medium` article that helped you, or `stackoverflow` that pointed you in the right direction.
 
-[codepen reference](https://codepen.io/deejay/pen/VdZKpJ)
-[youtube reference](https://www.youtube.com/watch?v=2cQUkYU8AmI&t=534s)
-[MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random)
-[Stackoverflow](https://stackoverflow.com/questions/19689840/how-to-make-button-disappear-on-click-and-show-another-button)
+![codepen reference](https://codepen.io/deejay/pen/VdZKpJ)
+![youtube reference](https://www.youtube.com/watch?v=2cQUkYU8AmI&t=534s)
+![MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random)
+![Stackoverflow](https://stackoverflow.com/questions/19689840/how-to-make-button-disappear-on-click-and-show-another-button)
 
 James Sinkler,
 Nick Schmitt,
